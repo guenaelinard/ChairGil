@@ -1,0 +1,153 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #FAEDED;
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 1220px; */
+}
+
+main {
+    align-content: center;
+    max-width: 1440px;
+    min-width: fit-content;
+    margin: auto auto;
+}
+
+header {
+    padding: 1rem 5rem 1rem;
+    text-align: center;
+    background: #ebd40a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+h1 {
+    margin: 2% 0 2% 2%;
+    color: #116A7B;
+    font-size: 2rem;
+}
+
+footer {
+    margin: 0 auto;
+}
+
+.meow {
+    margin: auto;
+    max-width: 1440px;
+
+}
+
+.footercontainer_panel {
+    display: flex;
+    gap: 1rem;
+    margin: 0 5rem;
+}
+
+.footercontainer_panel div {
+    display: flex;
+    width: auto;
+    gap: 2rem;
+}
+
+.footercontainer_panel h2 {
+    margin-top: 1rem;
+}
+
+.footercontainer_linkpanel {
+    flex: 2;
+    min-width: 220px;
+}
+
+.footer_chauteuil {
+    flex-direction: column;
+}
+
+.footer_produits {
+    flex-direction: column;
+}
+
+.footer_services {
+    flex-direction: column;
+}
+
+.barre_logo {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-around;
+
+}
+
+.barre_logo img {
+    display: flex;
+
+    width: auto;
+    height: 35px;
+}
+
+.reseaux,
+.card {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footercontainer_section {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.footercontainer_end_green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 4rem;
+    background: #1e3720;
+    color: azure;
+}
+
+
+
+.footercontainer_end_green img {
+    height: 3rem;
+    width: auto;
+    display: flex;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .footercontainer_panel,
+    .arcticle1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footercontainer_section {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 840px) {
+    .footercontainer_panel div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footercontainer_section {
+    align-items: center;
+    justify-content: center;
+}
