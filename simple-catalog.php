@@ -6,4 +6,4 @@ sort($products);
 <? echo $products[0] . "\r"; // le \r ou \n permet un retour à la ligne
 echo $products[2];
 ?>
-<footer> <?php include 'footer.php' ?></footer>
+<footer> <?php include 'footer.php' ?>

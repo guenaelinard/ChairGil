@@ -39,7 +39,7 @@
     <p>Prix : <?php echo $products["chaise_gaming"]["price"];
                 ?> €
     </p>
-    <img src="<?php echo $products["chaise_gaming"]["picture_url"] ?>" alt="Image chaise jardin plastique noire">
+    <img src="<?php echo $products["chaise_gaming"]["picture_url"] ?>" alt="Image chaise jardin gaming monster hunter">
 
     <h4> <?php echo $products["chaise_bureau"]['name'];
             ?>
@@ -47,6 +47,6 @@
     <p>Prix : <?php echo $products["chaise_bureau"]["price"];
                 ?> €
     </p>
-    <img src="<?php echo $products["chaise_bureau"]["picture_url"] ?>" alt="Image chaise jardin plastique noire">
+    <img src="<?php echo $products["chaise_bureau"]["picture_url"] ?>" alt="Image chaise bureau noire pro">
 
-    <footer> <?php include 'footer.php' ?></footer>
+    <footer> <?php include 'footer.php' ?>

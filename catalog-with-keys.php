@@ -16,4 +16,4 @@ $products = [
                 ?> €
     </p>
     <img src="<?php echo $products["picture_url"] ?>" alt="Image chaise jardin plastique noire">
-    <footer> <?php include 'footer.php' ?></footer>
+    <footer> <?php include 'footer.php' ?>

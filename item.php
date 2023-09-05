@@ -14,4 +14,4 @@ $photo = "library/chaise_jardin_black.jpg"; //chemin de la photo de l'objet
     echo "€"; ?>
 
     <img src="<?php echo $photo ?>" alt="Image chaise jardin plastique noire" />
-    <footer> <?php include 'footer.php' ?></footer>
+    <footer> <?php include 'footer.php' ?>

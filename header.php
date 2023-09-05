@@ -24,4 +24,4 @@
                 <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
-    </header>
+
