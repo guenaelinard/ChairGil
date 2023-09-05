@@ -4,17 +4,19 @@ sort($products);
 
 include 'header.php';
 
-// foreach($products as $product){
+foreach($products as $product){
+    echo $product, " ";
+}
 
-// }
 $i = 0;
 while ($i <= 2) {
-    echo $products[$i];
+    echo $products[$i], " ";
     $i++;
 }
 
 for ($count = 0; $count <= 2 ; $count++){
-    echo $products[$count];
+    echo $products[$count], " ";
 }
+
 
 include 'footer.php' ?>
