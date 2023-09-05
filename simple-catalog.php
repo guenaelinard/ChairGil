@@ -13,4 +13,8 @@ while ($i <= 2) {
     $i++;
 }
 
+for ($count = 0; $count <= 2 ; $count++){
+    echo $products[$count];
+}
+
 include 'footer.php' ?>
