@@ -15,24 +15,23 @@
                 <div class="footer_logo">
                 </div>
                 <div class="footercontainer_linkpanel">
-                    <div class="footer_chauteuil">
-                        <h2>CHAUTEUIL</h2>
+                    <div class="footer_chairgil">
+                        <h2>CHAIRGIL</h2>
                         <ul>
                             <li>À propos de nous</li>
-                            <li>Uniquement des canapés</li>
                             <li>Magasins</li>
                             <li>Nous recrutons</li>
                             <li>Mentions légales</li>
                         </ul>
                     </div>
-                    <div class="footer_produits">
+                    <!-- <div class="footer_produits">
                         <h2>PRODUITS</h2>
                         <ul>
                             <li>Canapés Chauffant</li>
                             <li>Fauteuils Chauffant</li>
                             <li>Revêtements</li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="footer_services">
                         <h2>SERVICES</h2>
                         <ul>
@@ -67,7 +66,7 @@
             ultrices, ac commodo orci commodo.
         </div>
         <div class="footercontainer_section">
-            Chauteuil™ Corp
+            ChairGil™ Corp
         </div>
 
 
