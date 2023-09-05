@@ -23,9 +23,30 @@
 ];
 ?>
 
-<?php include 'header.php' ?></header>
-<h2> <?php echo $products["chaise_jardin"]['name'];
-        ?>
+
+
+<?php include 'header.php' ?>
+
+<?php foreach ($products as $product) {
+    echo $product["name"], " ";
+    echo $product["price"], "€ ";
+} ?>
+
+<?php for ($i = 0; $i <= 2; $i++){
+    echo $products[$i]["name"], " ";
+    echo $products[$i]["price"];
+} ?>
+
+<?php $i= 0;
+while($i <= 2){
+    echo $products[$i]["name"], " ";
+    echo $products[$i]["price"], " ";
+    $i++;
+}
+?>
+
+<!-- <h2> <?php echo $products["chaise_jardin"]['name'];
+            ?>
 </h2>
 <p>Prix : <?php echo $products["chaise_jardin"]["price"];
             ?> €
@@ -46,6 +67,6 @@
 <p>Prix : <?php echo $products["chaise_bureau"]["price"];
             ?> €
 </p>
-<img src="<?php echo $products["chaise_bureau"]["picture_url"] ?>" alt="Image chaise bureau noire pro">
+<img src="<?php echo $products["chaise_bureau"]["picture_url"] ?>" alt="Image chaise bureau noire pro"> -->
 
 <?php include 'footer.php' ?>
