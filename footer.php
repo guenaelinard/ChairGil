@@ -1,6 +1,5 @@
-
-    <footer class="footer">
-        <div class="meow">
+<footer class="footer"> 
+<div class="meow">
             <hr>
             <div class="footercontainer_panel">
                 <div class="footer_logo">
@@ -67,7 +66,7 @@
         <div class="footercontainer_end_green">
             <div>Cookies - Politique de confidentialité - Télécharger garantie</div>
         </div>
-    </footer>
-</body>
+        </footer>
+        </body>
 
-</html>
+        </html>

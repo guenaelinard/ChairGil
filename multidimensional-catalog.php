@@ -23,30 +23,29 @@
 ];
 ?>
 
+<?php include 'header.php' ?></header>
+<h2> <?php echo $products["chaise_jardin"]['name'];
+        ?>
+</h2>
+<p>Prix : <?php echo $products["chaise_jardin"]["price"];
+            ?> €
+</p>
+<img src="<?php echo $products["chaise_jardin"]["picture_url"] ?>" alt="Image chaise jardin plastique noire">
 
-    <header> <?php include 'header.php' ?></header>
-    <h2> <?php echo $products["chaise_jardin"]['name'];
-            ?>
-    </h2>
-    <p>Prix : <?php echo $products["chaise_jardin"]["price"];
-                ?> €
-    </p>
-    <img src="<?php echo $products["chaise_jardin"]["picture_url"] ?>" alt="Image chaise jardin plastique noire">
- 
-    <h3> <?php echo $products["chaise_gaming"]['name'];
-            ?>
-    </h3>
-    <p>Prix : <?php echo $products["chaise_gaming"]["price"];
-                ?> €
-    </p>
-    <img src="<?php echo $products["chaise_gaming"]["picture_url"] ?>" alt="Image chaise jardin gaming monster hunter">
+<h3> <?php echo $products["chaise_gaming"]['name'];
+        ?>
+</h3>
+<p>Prix : <?php echo $products["chaise_gaming"]["price"];
+            ?> €
+</p>
+<img src="<?php echo $products["chaise_gaming"]["picture_url"] ?>" alt="Image chaise jardin gaming monster hunter">
 
-    <h4> <?php echo $products["chaise_bureau"]['name'];
-            ?>
-    </h4>
-    <p>Prix : <?php echo $products["chaise_bureau"]["price"];
-                ?> €
-    </p>
-    <img src="<?php echo $products["chaise_bureau"]["picture_url"] ?>" alt="Image chaise bureau noire pro">
+<h4> <?php echo $products["chaise_bureau"]['name'];
+        ?>
+</h4>
+<p>Prix : <?php echo $products["chaise_bureau"]["price"];
+            ?> €
+</p>
+<img src="<?php echo $products["chaise_bureau"]["picture_url"] ?>" alt="Image chaise bureau noire pro">
 
-    <footer> <?php include 'footer.php' ?>
+<?php include 'footer.php' ?>
