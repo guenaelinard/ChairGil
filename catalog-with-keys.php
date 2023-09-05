@@ -8,18 +8,6 @@ $products = [
 ];
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Produits</title>
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
     <header> <?php include 'header.php' ?></header>
     <h2> <?php echo $products['name'];
             ?>
@@ -29,6 +17,3 @@ $products = [
     </p>
     <img src="<?php echo $products["picture_url"] ?>" alt="Image chaise jardin plastique noire">
     <footer> <?php include 'footer.php' ?></footer>
-</body>
-
-</html>
