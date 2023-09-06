@@ -36,8 +36,11 @@ $products = [
             <h2><?php echo $product['name'];
                 ?>
             </h2>
-            <p> Prix :<?php echo number_format(formatPrice($product['price']),2,',',''), '€';
-                        ?>
+            <p> Prix TTC : <?php echo number_format(addTVA($product['price']), 2, ",", ''), "€";
+                            ?>
+            </p>
+            <p> Prix HT : <?php echo number_format(priceExcludingVAT($product['price']), 2, ",", ''), "€";
+                            ?>
             </p>
             <img src="<?php echo $product["picture_url"] ?>" alt="Image chaise jardin plastique noire">
         </li>

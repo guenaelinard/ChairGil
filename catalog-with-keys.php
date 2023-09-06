@@ -12,8 +12,11 @@ include 'header.php' ?>
 <h2> <?php echo $products['name'];
         ?>
 </h2>
-<p>Prix : <?php echo $products["price"];
-            ?> €
-</p>
+<p> Prix TTC : <?php echo number_format(addTVA($products['price']), 2, ",", ''), "€";
+                            ?>
+            </p>
+            <p> Prix HT : <?php echo number_format(priceExcludingVAT($products['price']), 2, ",", ''), "€";
+                            ?>
+            </p>
 <img src="<?php echo $products["picture_url"] ?>" alt="Image chaise jardin plastique noire">
 <footer class="footer"> <?php include 'footer.php' ?>
