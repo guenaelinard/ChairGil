@@ -1,19 +1,19 @@
 <?php $products = [
-    "chaise_jardin" => [
+    [
         "name" => "Chaise de Jardin",
         "price" => 125,
         "weight" => 300,
         "discount" => null,
         "picture_url" => "https://www.wadiga.com/28951-thickbox_default/fauteuil-de-jardin-en-plastique-gris-anthracite-55x60x81cm.jpg",
     ],
-    "chaise_gaming" => [
+    [
         "name" => "Chaise de Gaming",
         "price" => 100,
         "weight" => 450,
         "discount" => null,
         "picture_url" => "https://m.media-amazon.com/images/I/412xdJMZVrL.jpg",
     ],
-    "chaise_bureau" => [
+    [
         "name" => "Chaise de Bureau",
         "price" => 150,
         "weight" => 400,
@@ -32,41 +32,37 @@
     echo $product["price"], "€ ";
 } ?>
 
-<?php for ($i = 0; $i <= 2; $i++){
+<?php for ($i = 0; $i <= 2; $i++) {
     echo $products[$i]["name"], " ";
-    echo $products[$i]["price"];
 } ?>
 
-<?php $i= 0;
-while($i <= 2){
+<?php $i = 0;
+while ($i <= 2) {
+    echo $products[$i]["name"], " ";
+    echo $products[$i]["price"], " ";
+    $i++;
+} ?>
+
+<?php 
+$i = 0;
+do{
     echo $products[$i]["name"], " ";
     echo $products[$i]["price"], " ";
     $i++;
 }
+while($i <=2);
 ?>
-
-<!-- <h2> <?php echo $products["chaise_jardin"]['name'];
+ <?php foreach ($products as $product): ?>
+<div>
+    <h2> <?php echo $product['name'];
             ?>
-</h2>
-<p>Prix : <?php echo $products["chaise_jardin"]["price"];
-            ?> €
-</p>
-<img src="<?php echo $products["chaise_jardin"]["picture_url"] ?>" alt="Image chaise jardin plastique noire">
+    </h2>
+    <p>Prix : <?php echo $product["price"];
+                ?> €
+    </p>
+    <img src="<?php echo $product["picture_url"] ?>" alt="Image chaise jardin plastique noire">
 
-<h3> <?php echo $products["chaise_gaming"]['name'];
-        ?>
-</h3>
-<p>Prix : <?php echo $products["chaise_gaming"]["price"];
-            ?> €
-</p>
-<img src="<?php echo $products["chaise_gaming"]["picture_url"] ?>" alt="Image chaise jardin gaming monster hunter">
 
-<h4> <?php echo $products["chaise_bureau"]['name'];
-        ?>
-</h4>
-<p>Prix : <?php echo $products["chaise_bureau"]["price"];
-            ?> €
-</p>
-<img src="<?php echo $products["chaise_bureau"]["picture_url"] ?>" alt="Image chaise bureau noire pro"> -->
-
+</div>
+<?php endforeach; ?>
 <?php include 'footer.php' ?>
