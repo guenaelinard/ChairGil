@@ -29,27 +29,29 @@ $products = [
 
 <?php include 'header.php' ?>
 
+<div class="shop">
+    <ul>
+        <?php foreach ($products as $product) : ?>
+            <li>
+                <h2><?php echo $product['name'];
+                    ?>
+                </h2>
+                <p> Prix TTC : <?php echo number_format(addTVA($product['price']), 2, ",", ''), "€";
+                                ?>
+                </p>
+                <p> Prix HT : <?php echo number_format(priceExcludingVAT($product['price']), 2, ",", ''), "€";
+                                ?>
+                </p>
+                <p>
+                    <?php if ($product["discount"] !== null) :
+                        echo "Promo de ", $product['discount'], "% : ", number_format(discountedPrice($product['price'], $product['discount']), 2, ",", ''), "€";
+                    ?>
+                    <?php endif; ?>
+                </p>
+                <img src="<?php echo $product["picture_url"] ?>" alt="Image chaise jardin plastique noire">
+            </li>
 
-<ul>
-    <?php foreach ($products as $product) : ?>
-        <li>
-            <h2><?php echo $product['name'];
-                ?>
-            </h2>
-            <p> Prix TTC : <?php echo number_format(addTVA($product['price']), 2, ",", ''), "€";
-                            ?>
-            </p>
-            <p> Prix HT : <?php echo number_format(priceExcludingVAT($product['price']), 2, ",", ''), "€";
-                            ?>
-            </p>
-            <p>
-                <?php if ($product["discount"] !== null)
-                    echo "Promo de ", $product['discount'], "% : ", number_format(discountedPrice($product['price'], $product['discount']), 2, ",", ''), "€";
-                ?>
-            </p>
-            <img src="<?php echo $product["picture_url"] ?>" alt="Image chaise jardin plastique noire">
-        </li>
-
-    <?php endforeach; ?>
-</ul>
+        <?php endforeach; ?>
+    </ul>
+</div>
 <?php include 'footer.php' ?>
