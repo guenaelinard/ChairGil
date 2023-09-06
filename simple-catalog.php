@@ -1,4 +1,6 @@
-<?php $products = ["Chaise de Jardin", "Chaise de Gaming", "Chaise de Bureau"];
+<?php include 'my-functions.php';
+
+$products = ["Chaise de Jardin", "Chaise de Gaming", "Chaise de Bureau"];
 sort($products);
 
 
