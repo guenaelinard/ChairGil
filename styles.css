@@ -32,6 +32,21 @@ h1 {
     font-size: 2rem;
 }
 
+.shop{
+    display: flex
+
+    justify-content: center;
+}
+
+.shop-text{
+display: flex;
+}
+
+.shop img{
+    max-width: 75%;
+    max-height: 75%;
+    grid-column: span 5;
+}
 footer {
     margin: 0 auto;
 }

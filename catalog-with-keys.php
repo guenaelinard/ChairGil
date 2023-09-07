@@ -10,25 +10,27 @@ $products = [
 
 include 'header.php' ?>
 
-<div>
+<div class="shop">
     <ul>
         <li>
-            <h2> <?php echo $products['name'];
+            <div class="shop_text">
+                <h2> <?php echo $products['name'];
+                        ?>
+                </h2>
+                <p>
+                    <?php echo "Prix TTC : ", number_format(addTVA($products['price']), 2, ",", ' '), "€";
                     ?>
-            </h2>
-            <p>
-                <?php echo "Prix TTC : ", number_format(addTVA($products['price']), 2, ",", ''), "€";
-                ?>
-            </p>
-            <p>
-                <?php echo "Prix HT : ", number_format(priceExcludingVAT($products['price']), 2, ",", ''), "€";
-                ?>
-            </p>
-            <p>
-                <?php if ($products["discount"] !== null)
-                    echo "Promo de ", $products['discount'], "% : ", number_format(discountedPrice($products['price'], $products['discount']), 2, ",", ''), "€";
-                ?>
-            </p>
+                </p>
+                <p>
+                    <?php echo "Prix HT : ", number_format(priceExcludingVAT($products['price']), 2, ",", ' '), "€";
+                    ?>
+                </p>
+                <p>
+                    <?php if ($products["discount"] !== null)
+                        echo "Promo de ", $products['discount'], "% : ", number_format(discountedPrice($products['price'], $products['discount']), 2, ",", ' '), "€";
+                    ?>
+                </p>
+            </div>
             <img src="<?php echo $products["picture_url"] ?>" alt="Image chaise jardin plastique noire">
         </li>
     </ul>

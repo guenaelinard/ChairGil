@@ -7,23 +7,28 @@ sort($products);
 include 'header.php';
 
 foreach($products as $product){
-    echo $product, " ";
+    echo "Boucle For Each ". $product. "<br>";
 }
 
 $i = 0;
-while ($i <= 2) {
-    echo $products[$i], " ";
+while ($i != count($products)) {
+    if($i == 1){
+
+    }
+    echo "Boucle While ". reset($products). "<br>";
+    echo "Boucle While ". end($products). "<br>";
     $i++;
 }
 
-for ($count = 0; $count <= 2 ; $count++){
-    echo $products[$count], " ";
+for ($count = 0; $count < count($products) ; $count++){
+    echo "Boucle For ". $products[$count]. "<br>";
 }
 
 do{
-    echo $products[$i], " ";
+    echo "Boucle DoWhile ". $products[$i-1]. "<br>";
     $i++;
 }
-while($i <=2);
+while($i < count($products));
 
 include 'footer.php' ?>
+
