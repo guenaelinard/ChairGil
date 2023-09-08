@@ -18,7 +18,7 @@
                 <a class="nav-link" style="color: black;" href="#">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: black;" href="#">Nos Produits</a>
+                <a class="nav-link" style="color: black;" href="shop.php">Nos Produits</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color : black;" href="#">Contact</a>

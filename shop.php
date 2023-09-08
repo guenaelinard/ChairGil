@@ -67,7 +67,8 @@ $products = [
                     ?>
                     <?php endif; ?>
                 </p>
-                <label for"quantity">Quantité</label>
+                <form action="cart.php" method="POST">
+                <label for="quantity">Quantité</label>
                 <select class="buy_num" name="quantity" id="quan">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -76,8 +77,9 @@ $products = [
                     <option value="5">5</option>
                 </select>
                 <button class="buy_button">Ajouter au Panier</button>
+                </form>
             </div>
-            <img src="<?php echo $product["picture_url"] ?>" alt="Image chaise jardin plastique noire">
+            <img src="<?php echo $product["picture_url"] ?>">
         </div>
     <?php endforeach; ?>
 </div>
