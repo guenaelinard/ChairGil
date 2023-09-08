@@ -2,16 +2,15 @@ html {
     font-size: 18px;
 }
 
-body {
-    background-color: #FAEDED;
+/* body {
+    background-color: #fff;
     font-family: 'poppins';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* width: 1220px; */
-}
+} */
 
-main {
+.main {
     align-content: center;
     max-width: 1440px;
     min-width: fit-content;
@@ -21,148 +20,110 @@ main {
 header {
     padding: 1rem 5rem 1rem;
     text-align: center;
-    background: #ebd40a;
+    background: #028090;
     color: #fff;
     font-size: 1rem;
+    list-style-type: none;
 }
 
 h1 {
     margin: 2% 0 2% 2%;
-    color: #116A7B;
+    color: #FAEAED;
     font-size: 2rem;
 }
 
-.shop{
-    display: flex
-
-    justify-content: center;
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
 }
 
-.shop-text{
-display: flex;
-}
-
-.shop img{
-    max-width: 75%;
-    max-height: 75%;
-    grid-column: span 5;
-}
-footer {
-    margin: 0 auto;
-}
-
-.meow {
-    margin: auto;
+.shop {
     max-width: 1440px;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    margin: 1rem 1rem;
 }
 
-.footercontainer_panel {
+.product {
     display: flex;
-    gap: 1rem;
-    margin: 0 5rem;
+    align-items: center;
+    flex-shrink: 25%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: solid;
+    border-color: #028090;
+    width: 100%;
 }
 
-.footercontainer_panel div {
+.shop ul,
+li {
+    list-style-type: none;
+    margin: 1em;
+    padding: 1em;
+}
+
+.shop p {
     display: flex;
-    width: auto;
-    gap: 2rem;
+
 }
 
-.footercontainer_panel h2 {
-    margin-top: 1rem;
-}
-
-.footercontainer_linkpanel {
+.shop img {
+    object-fit: fill;
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    margin: auto 1rem;
     flex: 2;
-    min-width: 220px;
 }
 
-.footer_chairgil {
-    flex-direction: column;
-}
-
-.footer_produits {
-    flex-direction: column;
-}
-
-.footer_services {
-    flex-direction: column;
-}
-
-.barre_logo {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    justify-content: space-around;
+.buy_button {
+    border-radius: 5rem;
+    background-color: lightblue;
 
 }
 
-.barre_logo img {
-    display: flex;
-
-    width: auto;
-    height: 35px;
-}
-
-.reseaux,
-.card {
-    display: flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footercontainer_section {
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-}
-
-.footercontainer_end_green {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    height: 4rem;
-    background: #1e3720;
-    color: azure;
-}
-
-
-
-.footercontainer_end_green img {
-    height: 3rem;
-    width: auto;
-    display: flex;
-}
-
-
-
-@media (max-width: 1200px) {
-
-    .footercontainer_panel,
-    .arcticle1 {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 1080px) {
+    .shop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 1rem;
+        margin: 1rem 1rem;
     }
 
-    .footercontainer_section {
+    .product {
+        display: flex;
         align-items: center;
-        justify-content: center;
-    }
-
-}
-
-@media (max-width: 840px) {
-    .footercontainer_panel div {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse;
+        flex-shrink: 25%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border: solid;
+        border-color: #028090;
+        width: 100%;
     }
 }
 
-.footercontainer_section {
-    align-items: center;
-    justify-content: center;
+
+@media (max-width: 750px) {
+    .shop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 1rem;
+        margin: 1rem 1rem;
+    }
+
+    .product {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        flex-shrink: 25%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border: solid;
+        border-color: #028090;
+        width: 100%;
+    }
 }
