@@ -36,15 +36,15 @@ $products = [
                 <h2><?php echo $product['name'];
                     ?>
                 </h2>
-                <p> Prix TTC : <?php echo number_format(addTVA($product['price']), 2, ",", ''), "€";
+                <p> Prix TTC : <?php echo number_format(addTVA($product['price']), 2, ",", ''). "€";
                                 ?>
                 </p>
-                <p> Prix HT : <?php echo number_format(priceExcludingVAT($product['price']), 2, ",", ''), "€";
+                <p> Prix HT : <?php echo number_format(priceExcludingVAT($product['price']), 2, ",", ''). "€";
                                 ?>
                 </p>
                 <p>
                     <?php if ($product["discount"] !== null) :
-                        echo "Promo de ", $product['discount'], "% : ", number_format(discountedPrice($product['price'], $product['discount']), 2, ",", ''), "€";
+                        echo "Promo de ". $product['discount']. "% : ". number_format(discountedPrice($product['price'], $product['discount']), 2, ",", ''). "€";
                     ?>
                     <?php endif; ?>
                 </p>
