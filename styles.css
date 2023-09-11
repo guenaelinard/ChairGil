@@ -1,14 +1,9 @@
+/* ------------ HEADER ------------- */
+
+
 html {
     font-size: 18px;
 }
-
-/* body {
-    background-color: #fff;
-    font-family: 'poppins';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 
 .main {
     align-content: center;
@@ -39,6 +34,10 @@ header ul {
     text-decoration: none;
 }
 
+
+/* --------------------- SHOP ---------------- */
+
+
 .shop {
     max-width: 1440px;
     display: grid;
@@ -50,7 +49,7 @@ header ul {
 .product {
     display: flex;
     align-items: center;
-    flex-shrink: 25%;
+    /* flex-shrink: 25%; */
     margin: 1rem auto;
     padding: 1rem;
     border: solid;
@@ -76,7 +75,6 @@ li {
     max-height: 50%;
     height: auto;
     margin: auto 1rem;
-    flex: 2;
 }
 
 .buy_button {
@@ -84,6 +82,13 @@ li {
     background-color: lightblue;
 
 }
+
+.discount {
+    background-color: yellow;
+}
+
+/* --------------------RESPONSIVE-------------------*/
+
 
 @media (max-width: 1080px) {
     .shop {

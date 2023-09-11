@@ -1,9 +1,7 @@
 <?php
 
 function formatPrice($price){
-    // $format= numfmt_create('fr_FR', NumberFormatter::CURRENCY);
-    // echo numfmt_format_currency($format, $price, "EUR");
-    return($price * 0.01);
+    return(number_format($price * 0.01, 2, ",", ""));
 }
 
 function addTVA($price):string{
