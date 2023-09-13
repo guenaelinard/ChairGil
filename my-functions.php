@@ -27,9 +27,3 @@ function formatPrice($price)
 {
     return (number_format($price * 0.01, 2, ",", ""));
 }
-
-// function weightDelivery($weight, $delivery){
-//     if ($delivery === $deliveryID){
-
-//     }
-// }
