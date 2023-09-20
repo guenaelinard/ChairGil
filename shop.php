@@ -1,10 +1,12 @@
-<?php include 'catalog.php';
+<?php
 include 'my-functions.php';
-include 'header.php' ?>
+include 'header.php';
+include 'catalog.php' 
+?>
 
 <div class="shop">
 
-    <?php foreach (getProducts() as $product) : ?>
+    <?php foreach (getProducts($mysqlConnection) as $product) : ?>
     <?php $priceTTC = (float) addTVA($product['price']);
                 $priceDiscount = (float)discountedPrice($product['price'], $product['discount']);
                 $priceHT = (float) priceExcludingVAT($product['price']); ?>
