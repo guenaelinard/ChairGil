@@ -1,4 +1,13 @@
 <?php
+try {
+    $mysqlConnection = new PDO(
+        'mysql:host=localhost;dbname=ecommercedb;charset=utf8',
+        'guena.ina',
+        'Shiney-galopa-ponyta-38@'
+    );
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
 
 
 function addTVA($price)
@@ -26,4 +35,9 @@ function total($price, $quantity)
 function formatPrice($price)
 {
     return (number_format($price * 0.01, 2, ",", ""));
+}
+
+function dateOrder($date)
+{
+    
 }

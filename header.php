@@ -29,7 +29,7 @@ try {
         <h1>ChairGil</h1>
         <ul class="nav nav-underline">
             <li class="nav-item">
-                <a class="nav-link" style="color: black;" href="#">Accueil</a>
+                <a class="nav-link" style="color: black;" href="inscription.php">S'inscrire</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: black;" href="shop.php">Nos Produits</a>

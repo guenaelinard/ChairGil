@@ -1,9 +1,10 @@
-<?php include 'catalog.php';
-include 'delivery.php';
+<?php include 'delivery.php';
 include 'my-functions.php';
 include 'header.php';
+include 'catalog.php';
 
-// if(isset($_POST['id'])){
+if(isset($_POST['id'])){
+    extract($_POST);
 $id = $_POST['id'];
 $quantity = $_POST['quantity'];
 $product_panier = getProduct($mysqlConnection);
@@ -15,7 +16,7 @@ $priceHT = priceExcludingVAT($total);
 $TVA = $total - $priceHT;
 // } else {
 //     echo "Votre panier est vide.";
-// }
+}
 
 if (isset($_POST['deliveryID'])) {
     $deliveryID = $_POST['deliveryID'];
@@ -91,9 +92,9 @@ if (isset($_POST['deliveryID'])) {
             </td>
             <td>Frais de port :</td>
             <td><?php echo formatPrice($fees, 2, ",", "") . " €" ?></td>
-            <td><?php echo formatPrice($total+$fees). " €"?></td>
+            <td><?php echo formatPrice($total + $fees) . " €" ?></td>
         </tr>
-            <!-- <?php var_dump($_POST);?> -->
+        <!-- <?php var_dump($_POST); ?> -->
     </tbody>
 </table>
 <?php include 'footer.php' ?>

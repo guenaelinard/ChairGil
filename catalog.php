@@ -59,7 +59,7 @@ return $listProducts->fetchAll();
  
 function getProduct($id)
 {
-    $products = getProducts($mysqlConnection);
+    $products = getProducts($id);
     foreach ($products as $product) {
         if ($product['id'] === $id) {
             return $product;
