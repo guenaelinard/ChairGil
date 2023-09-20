@@ -6,7 +6,7 @@ include 'header.php';
 // if(isset($_POST['id'])){
 $id = $_POST['id'];
 $quantity = $_POST['quantity'];
-$product_panier = getProduct($id);
+$product_panier = getProduct($mysqlConnection);
 $priceTTC = (float) addTVA($product_panier['price']);
 $priceDiscount = (float) discountedPrice($product_panier['price'], $product_panier['discount']);
 $fees = 0;

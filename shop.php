@@ -40,7 +40,7 @@ include 'catalog.php'
                 <button class="buy_button" type="submit">Ajouter au Panier</button>
             </form>
         </div>
-        <img src="<?php echo $product["picture_url"] ?>">
+        <img src="<?php echo $product["url"] ?>">
     </div>
 <?php endforeach; ?>
 </div>

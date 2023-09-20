@@ -33,7 +33,7 @@ $addProducts1->execute();
 $products = $listProducts->fetchAll();
 foreach($products as $product){
     echo $product['name'], ' ', $product['price'], ' €', '<br>';
-    echo 'le  stock du produit ', $product['name'], ' est de : ', $product['quantity'], '<br>';
+    echo 'le  stock du produit '. $product['name']. ' est de : '. $product['quantity']. '<br>';
 }
 
 echo '<br>';
