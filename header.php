@@ -7,7 +7,7 @@ try {
     $mysqlConnection = new PDO(
         'mysql:host=localhost;dbname=ecommercedb;charset=utf8',
         'guena.ina',
-        'Shiney-galopa-ponyta-38@'
+        'password'
     );
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
